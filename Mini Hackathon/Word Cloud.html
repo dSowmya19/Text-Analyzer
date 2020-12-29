@@ -1,0 +1,41 @@
+<head>
+	<script src="javaScript.js"></script>
+	<link href="css/bootstrap_plain.css" rel="stylesheet">
+	<link href="css/mystyles.css" rel="stylesheet">
+</head>
+  <body>
+
+    <div class="container">
+	<center>
+      <!-- page tile -->
+      <div class="page-header">
+        <h1>Text Analyzer</h1>
+		<hr><h3>Word Count:<span id = "now">0</span>
+		&nbsp&nbspCharacter Count:<span id = "noc">0</span>
+		&nbsp&nbspRemaining <span id = "rem"></span>
+		</h3></hr>
+      </div>  
+	  <h3>
+		<select id = "cw">
+		<option value="words">Total Words</option>
+		<option value="characters">Total Characters</option>
+		</select>
+		<input type="number" class="textbox" min=1 id="num">
+	</h3>
+	 <div class = "row">
+	  <div class="col-sm-6">
+		<h3 class = "bg">Type Something</h3>
+		<textarea id = "data"placeholder = "Write here"></textarea><br>
+		<button onclick = "count()">Count</button>
+	  </div>
+	 
+	  
+	  <div class="col-sm-6">
+	  <h3 class = "bg">Word Cloud</h3>
+	  <img id = "img1" src = "https://quickchart.io/wordcloud?text=type%20something%20to%20see%20word%20cloud"></img><br>
+	  <button onclick = "wordcloud()">Show Word Cloud</button>
+	  </div>
+	   
+	</center>  
+	</div>
+	</body>
